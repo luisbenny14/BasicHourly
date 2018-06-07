@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Contador</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <form>
+            <div class="datos">
+                <div>
+                    <h1 id='contador'>Calculadora</h1>
+                </div>
+                <section class="comenzar">
+                    <button>Comenzar</button>
+                </section>
+                <section>
+                        <p>Horas a trabajar en el día:</p>
+                        <input class="valor" id='horasdia'type="text" name="HorasAtrabajar" placeholder="Escribe el número de horas">
+                        <button class="siguiente">Siguiente </button>
+                </section>
+                
+                <section>
+                    <p>Días de trabajo a la semana:</p>
+                    <input class="valor" id='dias' type="text" name="DiasSemana" placeholder="Escribe el número de días">
+                    <button class="siguiente">Siguiente </button>
+                </section>
+                
+                <section>
+                    <p>Gastos de vivienda:</p>
+                    <input class="gasto" type="text" name="GastoVivienda" placeholder="Escribe el numero">
+                    <button class="siguiente">Siguiente </button>
+                </section>
+
+                <section>
+                    <p>Gastos telefono e internet:</p>
+                    <input class="gasto" type="text" name="GastosTelEint" placeholder="Escribe el numero de tus gastos">
+                    <button class="siguiente">Siguiente </button>
+                </section>
+                
+                <section>
+                    <p>Gastos de comida:</p>
+                    <input class="gasto" type="text" name="GastosComida" placeholder="Escribe tus gastos de comida">
+                    <button class="siguiente">Siguiente </button>
+                </section>
+
+                
+                <section>
+                    <p>Gastos de teléfono celular:</p>
+                    <input class="gasto" type="text" name="GastosCel" placeholder="Escribe tus gastos">
+                    <button class="siguiente">Siguiente </button>
+                </section>
+                
+                <section>
+                        <p>Gastos transporte:</p>
+                        <input class="gasto" type="text" name="GastosTransporte" placeholder="Escribe tus gastos">
+                        <button class="siguiente">Siguiente </button>
+                </section>  
+            
+                
+                <section>
+                    <p>Gastos de entretenimiento:</p>
+                    <input class="gasto" type="text" name="GastosEntretenimiento" placeholder="Escribe tus gastos">
+                    <button class="siguiente">Siguiente </button>
+                </section>
+                
+                <section>
+                    <p>Porcentaje de ganancia:</p>
+                    <input class="valor" id="Ganancia" type="text" name="PorcientoGanancia" placeholder="Escribe tu ganancia">
+                    <button class="siguiente">Siguiente </button>
+                </section>
+                
+                <section>
+                    <p>Porcentaje de jubilación:</p>
+                    <input class="valor" id="jubilacion" type="text" name="PorcientoJubilacion" placeholder="Escribe tu jubilación">
+                    <button class="siguiente">Siguiente </button>
+                </section>
+                
+                <section>
+                    <button id="boton" class="calcular">Calcular</button>
+               </section>
+               <section>
+                    <div>
+                        <h2>Gastos totales:<span class="totales"></span></h2>
+                        <h3>Minimo ingreso mensual:<span class="mim"></span></h3>
+                        <h4>Costo por hora: <span class="cph"></span></h4>
+                    </div>     
+                    <br>
+                    <button class="reiniciar">Reiniciar</button>   
+                </section>
+            </div>
+        </form>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        
+        <script src="app.js"></script> 
+        
+    </body>
+</html>
